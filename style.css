@@ -1,0 +1,22 @@
+.fundo {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto {
+    color: white;
+}
+
+.slogan {
+    margin-top: 200px;
+}
+
+.mensagem {
+
+    margin-top: 200px;
+
+}
+label {
+    font-weight: 700;
+}
