@@ -15,8 +15,10 @@
 <div class="container-fluid ">
 <div class="row">
 <div class="col-md-8  mx-auto slogan">
+    <div class="back-texto">
 <h1 class="texto" >Empréstimo Pessoal</h1>
 <h4 class="texto">Dinheiro na sua Conta em até 1 dia útil. Totalmente Online sem Burocracia! Solicite uma Proposta. Cadastre seu email para ter acesso</h4>
+</div>
 </div>
 <div class="col-md-4 mt-5 mx-auto">
 <div class="jumbotron">

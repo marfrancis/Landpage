@@ -14,9 +14,9 @@ $resultado = $query->execute();
 
 
 if($resultado){
-    header('Location: sucesso.php'); ;
+    header('Location: sucesso.php'); 
 } else {
-    echo "Deu errado";
+    header('Location: erro.php');
 }
 
 
