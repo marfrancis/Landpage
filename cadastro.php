@@ -1,23 +1,25 @@
 <?php 
+include_once 'conexao.php';
 
-$dsn = "mysql:host=localhost;dbname=landpage;port=3306";
-$user = "root";
-$pass = "";
+try {
 
-$conexao = new PDO($dsn, $user, $pass);
-
-
-$query = $conexao->prepare('INSERT INTO cadastro (id, nome, email)
-VALUES (null,"'.$_POST['nome'].'","'.$_POST['email'].'")');
-$resultado = $query->execute();
+$query = $conexao->prepare('INSERT INTO cadastro (nome, email)
+VALUES (:nome,:email)');
+$resultado = $query->execute(["nome"=>$_POST['nome'],"email"=>$_POST['email']]);
 
 
 
 if($resultado){
     header('Location: sucesso.php'); 
 } else {
-    header('Location: erro.php');
+    echo "<H1>Erro de cadastro</H1>";
 }
+
+}catch(PDOException $ex){
+    echo 'Serviço indisponível';
+}
+
+
 
 
 
